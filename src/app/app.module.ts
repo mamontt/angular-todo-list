@@ -1,18 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { StoreComponent } from './app.component';
+import { EnterComponent } from './input.component';
+import { PrintComponent } from './output.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    StoreComponent,
+    EnterComponent,
+    PrintComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [EnterComponent]
 })
 export class AppModule { }
